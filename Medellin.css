@@ -1,0 +1,50 @@
+Html, body, div {
+    Padding: 0;
+    Border: 0;
+    Margin: 0;
+}
+
+.Map {
+    width: 48%;
+    margin-left: 24%;
+}
+
+.Timeline {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    cursor: pointer;
+}
+
+.tick line {
+    stroke: #0092D0;
+}
+
+.handle {
+    fill: #0092D0;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #474747;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 14.5px;
+    fill: #474747;
+    stroke: none;
+}
+
+#QOL_Key rect {
+    cursor: help;
+}
+
+
+
+
+
+
