@@ -11,13 +11,6 @@ var hideNeighborhoods = function() {
     $('#_x32_012').css('display', 'none');
     $('#_x32_013').css('display', 'none');
     $('#_x32_014').css('display', 'none');
-    hide2006Dots();
-    hide2007Dots();
-    hide2008Dots();
-    hide2009Dots();
-    hide2010Dots();
-    hide2012Dots();
-    hide2014Dots();
 }
 
 var hide2004Neighborhood = function() {
@@ -334,6 +327,14 @@ var main = function() {
     });
 };
 
+
 $(document).ready(hideNeighborhoods);
 $(document).ready(hide2004Dots);
+$(document).ready(hide2006Dots);
+$(document).ready(hide2007Dots);
+$(document).ready(hide2008Dots);
+$(document).ready(hide2009Dots);
+$(document).ready(hide2010Dots);
+$(document).ready(hide2012Dots);
+$(document).ready(hide2014Dots);
 $(document).ready(main);

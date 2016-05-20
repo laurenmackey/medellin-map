@@ -28,13 +28,13 @@ var main = function () {
         // console.log('Clicked dot is', this, 'Description is', description, 'Click Count is', clickCount);
     })
 
-    $('.dotsAndDescriptions g circle').hover(
-        function() {
+    $('.dotsAndDescriptions g circle').mouseenter(function() {
             var hoveredDot = $(this),
                 description = hoveredDot.next(),
                 // same as above, but does not increment by 1 because there is no click here. This is just to access the
                 // click-count attribute for the dot that's being hovered over
                 clickCount = (hoveredDot.data("click-count") || 0);
+                console.log('Hovered In');
 
             // if there's been a down click but no up click, return false AKA don't allow hover functionality to work
             if (clickCount % 2 === 1) {
@@ -43,11 +43,14 @@ var main = function () {
 
             $(hoveredDot).css('r', '10.25');
             $(description).css('display', 'inline');
-        }, 
-        function() {
+        }) 
+        
+    $('.dotsAndDescriptions g circle').mouseleave(function() {
             var hoveredDot = $(this),
                 description = hoveredDot.next(),
                 clickCount = (hoveredDot.data("click-count") || 0);
+                console.log('Hovered Out');
+                console.log('Click count is: ', clickCount)
 
             if (clickCount % 2 === 1) {
                 return false;
@@ -55,8 +58,7 @@ var main = function () {
             
             $(hoveredDot).css('r', '7.75');
             $(description).css('display', 'none');
-        }
-    )
+        })
 
     $('#QOL_Key rect').hover(
         function() {
