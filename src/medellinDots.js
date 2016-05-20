@@ -1,8 +1,6 @@
 console.log("I am running");
 
 var main = function () {
-    // Hides all info panels
-    $('.Description').css('display', 'none');
     $('#QOL_Key_Descr').css('display', 'none');
 
     $('.dotsAndDescriptions g circle').click(function() {
@@ -17,14 +15,14 @@ var main = function () {
         // Sets the attribute click-count for the clicked dot to the count stored in clickCount (above)
         clickedDot.data("click-count", clickCount);
 
-        $(clickedDot).css('r', '10.75');
+        $(clickedDot).css('r', '10.25');
         
         if (clickCount % 2 === 0) {
             $(clickedDot).css('r', '7.75');
             $(description).css('display', 'none');
         }
         else {
-            $(clickedDot).css('r', '10.75');
+            $(clickedDot).css('r', '10.25');
             $(description).css('display', 'inline');
         }
         // console.log('Clicked dot is', this, 'Description is', description, 'Click Count is', clickCount);
@@ -43,7 +41,7 @@ var main = function () {
                 return false;
             }
 
-            $(hoveredDot).css('r', '10.75');
+            $(hoveredDot).css('r', '10.25');
             $(description).css('display', 'inline');
         }, 
         function() {
@@ -68,6 +66,16 @@ var main = function () {
             $('#QOL_Key_Descr').css('display', 'none');
         }
     )
+
+    $('.closeButton').click(function() {
+        $('.PopUp_Panel').fadeOut(300);
+    })
+
+    $(document).bind('keydown', function(e) {
+        if (e.which === 27) {
+            $('.PopUp_Panel').fadeOut(300);
+        }
+    })
 };
 
 $(document).ready(main);
