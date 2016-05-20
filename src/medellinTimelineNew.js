@@ -18,7 +18,6 @@ var hideNeighborhoods = function() {
     hide2010Dots();
     hide2012Dots();
     hide2014Dots();
-    $('.metrocableKDot').css('display', 'inline').css('r', '10.25');
 }
 
 var hide2004Neighborhood = function() {
@@ -81,6 +80,11 @@ var reduce2012Dots = function() {
 var reduce2014Dots = function() {
     $('.exploraDot').css('display', 'inline').css('r', '7.75');
     $('.exploraDescription').css('display', 'none');
+}
+
+var hide2004Dots = function() {
+    $('.metrocableKDot').css('display', 'none');
+    $('.metrocableKDescription').css('display', 'none');
 }
 
 var hide2006Dots = function() {
@@ -159,8 +163,8 @@ var main = function() {
             hide2010Dots();
             hide2012Dots();
             hide2014Dots();
-            $('.metrocableKDot').css('display', 'inline').css('r', '10.25');
-            $('.metrocableKDescription').css('display', 'inline');
+            $('.metrocableKDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.metrocableKDescription').fadeIn(275).css('display', 'inline');
         }
 
         else if (clickedID === "2005") {
@@ -188,10 +192,10 @@ var main = function() {
             hide2010Dots();
             hide2012Dots();
             hide2014Dots();
-            $('.caraboboDot').css('display', 'inline').css('r', '10.25');
-            $('.lb_SanJavierDot').css('display', 'inline').css('r', '10.25');
-            $('.caraboboDescription').css('display', 'inline');
-            $('.lb_SanJavierDescription').css('display', 'inline');
+            $('.caraboboDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.lb_SanJavierDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.caraboboDescription').fadeIn(275).css('display', 'inline');
+            $('.lb_SanJavierDescription').fadeIn(275).css('display', 'inline');
         }
 
         else if (clickedID === "2007") {
@@ -205,16 +209,16 @@ var main = function() {
             hide2010Dots();
             hide2012Dots();
             hide2014Dots();
-            $('.lb_EspanaDot').css('display', 'inline').css('r', '10.25');
-            $('.lb_LaderaDot').css('display', 'inline').css('r', '10.25');
-            $('.lb_LaQuintanaDot').css('display', 'inline').css('r', '10.25');
-            $('.puenteDot').css('display', 'inline').css('r', '10.25');
-            $('.granizalDot').css('display', 'inline').css('r', '10.25');
-            $('.lb_EspanaDescription').css('display', 'inline');
-            $('.lb_LaderaDescription').css('display', 'inline');
-            $('.lb_LaQuintanaDescription').css('display', 'inline');
-            $('.puenteDescription').css('display', 'inline');
-            $('.granizalDescription').css('display', 'inline');
+            $('.lb_EspanaDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.lb_LaderaDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.lb_LaQuintanaDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.puenteDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.granizalDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.lb_EspanaDescription').fadeIn(275).css('display', 'inline');
+            $('.lb_LaderaDescription').fadeIn(275).css('display', 'inline');
+            $('.lb_LaQuintanaDescription').fadeIn(275).css('display', 'inline');
+            $('.puenteDescription').fadeIn(275).css('display', 'inline');
+            $('.granizalDescription').fadeIn(275).css('display', 'inline');
         }
 
         else if (clickedID === "2008") {
@@ -228,14 +232,14 @@ var main = function() {
             hide2010Dots();
             hide2012Dots();
             hide2014Dots();
-            $('.metrocableJDot').css('display', 'inline').css('r', '10.25');
-            $('.lb_BelenDot').css('display', 'inline').css('r', '10.25');
-            $('.cultCenterDot').css('display', 'inline').css('r', '10.25');
-            $('.colegioDot').css('display', 'inline').css('r', '10.25');
-            $('.metrocableJDescription').css('display', 'inline');
-            $('.lb_BelenDescription').css('display', 'inline');
-            $('.cultCenterDescription').css('display', 'inline');
-            $('.colegioDescription').css('display', 'inline');
+            $('.metrocableJDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.lb_BelenDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.cultCenterDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.colegioDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.metrocableJDescription').fadeIn(275).css('display', 'inline');
+            $('.lb_BelenDescription').fadeIn(275).css('display', 'inline');
+            $('.cultCenterDescription').fadeIn(275).css('display', 'inline');
+            $('.colegioDescription').fadeIn(275).css('display', 'inline');
         }
 
         else if (clickedID === "2009") {
@@ -249,8 +253,8 @@ var main = function() {
             hide2010Dots();
             hide2012Dots();
             hide2014Dots();
-            $('.infantilDot').css('display', 'inline').css('r', '10.25');
-            $('.infantilDescription').css('display', 'inline');
+            $('.infantilDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.infantilDescription').fadeIn(275).css('display', 'inline');
         }
 
         else if (clickedID === "2010") {
@@ -264,8 +268,8 @@ var main = function() {
             reduce2009Dots();
             hide2012Dots();
             hide2014Dots();
-            $('.moraDot').css('display', 'inline').css('r', '10.25');
-            $('.moraDescription').css('display', 'inline');
+            $('.moraDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.moraDescription').fadeIn(275).css('display', 'inline');
         }
 
         else if (clickedID === "2011") {
@@ -293,10 +297,10 @@ var main = function() {
             reduce2009Dots();
             reduce2010Dots();
             hide2014Dots();
-            $('.lb_ManuelDot').css('display', 'inline').css('r', '10.25');
-            $('.comuna_13Dot').css('display', 'inline').css('r', '10.25');
-            $('.lb_ManuelDescription').css('display', 'inline');
-            $('.comuna_13Description').css('display', 'inline');
+            $('.lb_ManuelDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.comuna_13Dot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.lb_ManuelDescription').fadeIn(275).css('display', 'inline');
+            $('.comuna_13Description').fadeIn(275).css('display', 'inline');
         }
 
         else if (clickedID === "2013") {
@@ -324,11 +328,12 @@ var main = function() {
             reduce2009Dots();
             reduce2010Dots();
             reduce2012Dots();
-            $('.exploraDot').css('display', 'inline').css('r', '10.25');
-            $('.exploraDescription').css('display', 'inline');
+            $('.exploraDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.exploraDescription').fadeIn(275).css('display', 'inline');
         }
     });
 };
 
 $(document).ready(hideNeighborhoods);
+$(document).ready(hide2004Dots);
 $(document).ready(main);

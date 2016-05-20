@@ -69,11 +69,15 @@ var main = function () {
 
     $('.closeButton').click(function() {
         $('.PopUp_Panel').fadeOut(300);
+        $('.metrocableKDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+        $('.metrocableKDescription').fadeIn(275).css('display', 'inline');
     })
 
     $(document).bind('keydown', function(e) {
         if (e.which === 27) {
             $('.PopUp_Panel').fadeOut(300);
+            $('.metrocableKDot').fadeIn(275).css('display', 'inline').css('r', '10.25');
+            $('.metrocableKDescription').fadeIn(275).css('display', 'inline');
         }
     })
 };
