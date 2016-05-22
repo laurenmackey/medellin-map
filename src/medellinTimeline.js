@@ -346,14 +346,4 @@ var main = function() {
     });
 };
 
-
-$(document).ready(hideNeighborhoods);
-$(document).ready(hide2004Dots);
-$(document).ready(hide2006Dots);
-$(document).ready(hide2007Dots);
-$(document).ready(hide2008Dots);
-$(document).ready(hide2009Dots);
-$(document).ready(hide2010Dots);
-$(document).ready(hide2012Dots);
-$(document).ready(hide2014Dots);
 $(document).ready(main);
