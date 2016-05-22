@@ -4,9 +4,15 @@ Html, body, div {
     Margin: 0;
 }
 
-.Map {
-    width: 48%;
-    margin-left: 24%;
+.svg-container {
+    height: 0px;
+    padding-bottom: 87.5%;
+}
+
+.svg-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 #QOL_Key rect {
@@ -20,7 +26,6 @@ Html, body, div {
 .closeButton {
     cursor: pointer;
 }
-
 
 
 
