@@ -82,6 +82,19 @@ var main = function () {
             $('.metrocableKDescription').fadeIn(275).css('display', 'inline');
         }
     })
+
+    $('#Title').click(function() {
+        window.open('http://laurenmackey.com/medellin-social-urbanism/');
+    })
+
+    $('#Title').hover(
+        function() {
+            $('#Learn_More').css('display', 'inline');
+        }, 
+        function() {
+            $('#Learn_More').css('display', 'none');
+        }
+    )
 };
 
 $(document).ready(main);
